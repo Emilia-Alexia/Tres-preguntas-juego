@@ -36,7 +36,7 @@ def Cuestionario1(nombre_jugador):
     ventana_secundaria = tk.Tk()
     ventana_secundaria.title('Pregunta 1')
     ventana_secundaria.geometry('300x200')
-    # Respuestas
+    # Respuestas de la primera pregunta
     opciones = {
         'A': 'Federico García Lorca',
         'B': 'Miguel de Cervantes',  # Correcta
@@ -68,7 +68,7 @@ def Cuestionario2(nombre_jugador):
     ventana_terciaria = tk.Tk()
     ventana_terciaria.title('Pregunta 2')
     ventana_terciaria.geometry('300x200')
-    # Respuestas
+    # Respuestas de la segunda pregunta
     opciones = {
         'A': 'Homero',  # Correcta
         'B': 'Platón',
@@ -100,7 +100,7 @@ def Cuestionario3(nombre_jugador):
     ventana_cuarta = tk.Tk()
     ventana_cuarta.title('Pregunta 3')
     ventana_cuarta.geometry('300x200')
-    # Respuestas
+    # Respuestas de la tercera pregunta
     opciones = {
         'A': 'Anna Freud',
         'B': 'Carl Gustav Jung',
@@ -133,10 +133,10 @@ ventana_raiz.geometry('300x250')
 
 # Cargar imagen de fondo (Con try porque si no, no va)
 try:
-    imagen_fondo = Image.open("fondo.jpg")
+    imagenfondo = Image.open("fondo.jpg")
 except FileNotFoundError:
-    imagen_fondo = Image.open(r'D:Semana del 19 al 23\Programación Prácticas\fondo.jpg')
-fondo = ImageTk.PhotoImage(imagen_fondo)
+    imagenfondo = Image.open(r'D:Semana del 19 al 23\Programación Prácticas\fondo.jpg')
+fondo = ImageTk.PhotoImage(imagenfondo)
 
 # Colocamos la imagen de fondo
 fondo_label = tk.Label(ventana_raiz, image=fondo)
