@@ -47,7 +47,7 @@ def Cuestionario1(nombre_jugador):
     # Función para responder
     def Responde(eleccion):
         if eleccion == respuesta_correcta:
-            cursor.execute('UPDATE jugadores SET puntuacion = puntuacion + 10 WHERE nombre = ?', (nombre_jugador,))
+            cursor.execute('UPDATE jugadores SET puntuacion = puntuacion + 100 WHERE nombre = ?', (nombre_jugador,))
             basedatos.commit()
         ventana_secundaria.destroy()
         Cuestionario2(nombre_jugador)
@@ -79,7 +79,7 @@ def Cuestionario2(nombre_jugador):
     # Función para responder
     def Responde2(eleccion):
         if eleccion == respuesta_correcta:
-            cursor.execute('UPDATE jugadores SET puntuacion = puntuacion + 10 WHERE nombre = ?', (nombre_jugador,))
+            cursor.execute('UPDATE jugadores SET puntuacion = puntuacion + 100 WHERE nombre = ?', (nombre_jugador,))
             basedatos.commit()
         ventana_terciaria.destroy()
         Cuestionario3(nombre_jugador)
@@ -111,7 +111,7 @@ def Cuestionario3(nombre_jugador):
     # Función para responder
     def Responde3(eleccion):
         if eleccion == respuesta_correcta:
-            cursor.execute('UPDATE jugadores SET puntuacion = puntuacion + 10 WHERE nombre = ?', (nombre_jugador,))
+            cursor.execute('UPDATE jugadores SET puntuacion = puntuacion + 100 WHERE nombre = ?', (nombre_jugador,))
             basedatos.commit()
         ventana_cuarta.destroy()
 
