@@ -36,6 +36,7 @@ def Comenzar_Juego():
 ventana_raiz = tk.Tk()
 ventana_raiz.title('Login del Juego')
 ventana_raiz.geometry('300x250')
+ventana_raiz.configure(bg='red')
 
 # Widgets
 # Titulo
